@@ -7,11 +7,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Brett Porter" />
-    <meta name="Date-Creation-yyyymmdd" content="20150913" />
+    <meta name="author" content="Rahul Thakur" />
+    <meta name="author" content="Olivier Lamy" />
     <meta name="Date-Revision-yyyymmdd" content="20150913" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Plexus &#x2013; Plexus</title>
+    <title>Plexus &#x2013; Community - Getting Involved</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.4.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -52,7 +52,7 @@
         Plexus</a>
                     <span class="divider">/</span>
       </li>
-        <li class="active ">Plexus</li>
+        <li class="active ">Community - Getting Involved</li>
         
                 
                     
@@ -84,10 +84,12 @@
             </li>
                                         <li class="nav-header">Plexus</li>
                               
-      <li class="active">
+      <li>
   
-            <a href="#"><span class="none"></span>Overview</a>
-          </li>
+                          <a href="index.html" title="Overview">
+          <span class="none"></span>
+        Overview</a>
+            </li>
                               <li class="nav-header">Plexus Projects</li>
                               
       <li>
@@ -235,12 +237,10 @@
         IRC</a>
             </li>
                 
-      <li>
+      <li class="active">
   
-                          <a href="get-involved.html" title="Get Involved">
-          <span class="none"></span>
-        Get Involved</a>
-            </li>
+            <a href="#"><span class="none"></span>Get Involved</a>
+          </li>
                                         <li class="nav-header">Project Documentation</li>
                                                                                                                                       
       <li>
@@ -311,47 +311,116 @@
                 
         <div id="bodyColumn"  class="span10" >
                                   
-            <div class="section">
-<h2><a name="Overview"></a>Overview</h2>
-<p>Codehaus Plexus is a collection of components used by <a class="externalLink" href="http://maven.apache.org/"> Apache Maven</a>:</p>
-<ul>
-<li><a href="./modello/"> Modello</a>,</li>
-<li><a href="./plexus-classworlds/">Plexus Classworlds</a>,</li>
-<li>Plexus Components: 
-<ul>
-<li><a href="./plexus-archiver/">plexus-archiver</a>: components to manipulate archives,</li>
-<li><a href="./plexus-cli">plexus-cli</a>: components to easily create CLIs,</li>
-<li><a href="./plexus-compiler/">plexus-compiler</a>: components to manipulate compilers,</li>
-<li><a href="./plexus-digest/">plexus-digest</a>: </li>
-<li><a href="./plexus-i18n/">plexus-i18n</a>: </li>
-<li><a href="./plexus-interactivity/">plexus-interactivity</a>: </li>
-<li><a href="./plexus-interpolation/">plexus-interpolation</a>: flexible interpolation framework,</li>
-<li><a href="./plexus-io/">plexus-io</a>: components designed for use in I/O operations,</li>
-<li><a href="./plexus-resources/">plexus-resources</a>: a component to transparently retrieve resources from the filesystem, classpath or internet,</li>
-<li><a href="./plexus-swizzle/">plexus-swizzle</a>: a component adaptated from David Blevin's Swizzle project to generate reports from an issue tracking system (JIRA),</li>
-<li><a href="./plexus-velocity/">plexus-velocity</a>: component to render velocity templates.</li></ul></li>
-<li><a href="./plexus-utils/"> Plexus Utils</a>,</li></ul></div>
+            
+  
+    <div class="section">
+<h2><a name="How_do_I_get_involved_in_Plexus_development"></a>How do I get involved in Plexus development?</h2>
+      
 <div class="section">
-<h2><a name="Plexus_History"></a>Plexus History</h2><hr />
-<div class="section">
-<h3><a name="IMPORTANT_NOTICE"></a>IMPORTANT NOTICE</h3>
-<p>The Plexus project was previously focused on IoC container: it is now replaced with <a class="externalLink" href="https://www.eclipse.org/sisu/">Eclipse Sisu</a>, rewritten as an extension on Google Guice. We kept whole content on IoC for reference, even if the IoC part is now obsolete.</p><hr />
-<p>The Plexus project provides a full software stack for creating and executing software projects. Based on the Plexus container, the applications can utilise component-oriented programming to build modular, reusable components that can easily be assembled and reused.</p>
-<p>While Plexus is similar to other <i>inversion-of-control</i> (IoC) or <i>dependency injection</i> frameworks such as the Spring Framework, it is a full-fledged container that supports many more features such as:</p>
+<h3><a name="Interested_in_being_a_part_of_Plexus_development_team...._thats_great"></a>Interested in being a part of Plexus development team.... that's great!</h3>
+        
+<p>You can contribute: 
+        </p>
 <ul>
-<li>Component lifecycles </li>
-<li>Component instantiation strategies</li>
-<li>Nested containers </li>
-<li>Component configuration</li>
-<li>Auto-wiring</li>
-<li>Component dependencies, and </li>
-<li>Various dependency injection techniques including constructor injection, setter injection, and private field injection. </li></ul>
-<p>See the <a href="./ref/feature-comparison.html"> Feature Comparison</a> page for more information on the differences between Plexus and other products.</p>
-<p>The Plexus project provides a number of pre-built components for common tasks and toolkits such as Jetty, Velocity, Hibernate, i18n, and <a href="./ref/available-components.html"> many more</a>. However, Plexus is also able to reuse your existing components written for other IoC frameworks such as Spring, Avalon and Pico Container unmodified, as well as allowing you to reuse your existing code inside the Plexus Container.</p>
-<p>Plexus comes with an application server that can run your applications, making it trivial to build a standalone executable distribution with common features such as service execution if needed. However, Plexus applications can be run in any environment by embedding the container in an existing application, including Java EE applications or web applications.</p>
-<p>Components in Plexus need not be written in Java, with component factories existing for Jython, JRuby, Beanshell, and Groovy.</p>
-<p>The Plexus container is currently used in a number of applications and frameworks, most notably Maven 2.0 and Webwork 2.2 (Struts Action Framework 2.0).</p>
-<p>For answers to common questions about Plexus, see the <a href="./faq.html"> FAQ</a>.</p></div></div>
+            
+<li>by asking questions and sharing ideas on Plexus <a href="mail-lists.html">mailing lists</a>  and on <a href="irc.html">IRC</a>
+            </li>
+            
+<li>by picking up issues of interest and submitting patches with Plexus team.</li>
+          </ul>
+        
+      </div>
+      
+<div class="section">
+<h3><a name="Reporting_Issues"></a>Reporting Issues</h3>
+        
+<p>Before reporting please chose the correct project :
+          </p>
+<ul>
+            
+<li>Plexus Container issue  <a class="externalLink" href="http://jira.codehaus.org/browse/PLX">Plexus  (PLX)</a>
+            </li>
+            
+<li>Plexus Components issue  <a class="externalLink" href="http://jira.codehaus.org/browse/PLXCOMP">Plexus Components  (PLXCOMP)</a>
+            </li>
+            
+<li>Plexus Redback issue  <a class="externalLink" href="http://jira.codehaus.org/browse/PLXREDBACK">Plexus Redback  (PLXREDBACK)</a>
+            </li>
+            
+<li>Plexus Redback issue  <a class="externalLink" href="http://jira.codehaus.org/browse/PLXUTILS">Plexus Utils  (PLXUTILS)</a>
+            </li>
+          </ul>
+        
+      </div>
+      
+<div class="section">
+<h3><a name="Creating_and_submitting_a_patch"></a>Creating and submitting a patch</h3>
+        
+<p>First you need to create an issue in JIRA in the correct project. (ensure you have made a svn up before).</p>
+        <br />
+        
+<p>If your patch is a improvement or a new feature : add a junit.</p>
+        
+<div class="source"><pre class="prettyprint linenums">
+svn diff &gt; projectName-issueId.patch (where projectName in PLX, PLXCOMP, PLXREDBACK, PLXUTILS)      
+        </pre></div>
+        
+<p>Attached the patch to the jira issue.</p>
+      </div>
+      
+<div class="section">
+<h3><a name="License"></a>License</h3>
+        
+<p>All sources must contain the following license header :
+          </p>
+<div class="source"><pre class="prettyprint linenums">
+/*
+ * Copyright 2007 The Codehaus Foundation.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */     
+          </pre></div>
+        
+      </div>
+      
+<div class="section">
+<h3><a name="Plexus_Code_Style"></a>Plexus Code Style</h3>
+        
+<p>The following sections show how to set up the code style for Maven in IDEA and Eclipse. It is strongly preferred that patches use this style before they are spplied</p>
+        </div>
+<div class="section">
+<h3><a name="IntelliJ_IDEA_4.5"></a>IntelliJ IDEA 4.5+</h3>
+          
+<p>
+            Download <a href="codestyle/maven-idea-codestyle.xml">maven-idea-codestyle.xml</a> and copy it to ~/.IntelliJIDEA/config/codestyles then restart IDEA. On Windows, try C:\Documents and Settings&lt;username&gt;\.IntelliJIDEA\config\codestyles
+          </p>
+          
+<p>After this, restart IDEA and open the settings to select the new code style.</p>
+        </div>
+        
+<div class="section">
+<h3><a name="Eclipse_3.2"></a>Eclipse 3.2+</h3>
+          
+<p>Download <a href="codestyle/maven-eclipse-codestyle.xml">maven-eclipse-codestyle.xml</a>
+          </p>
+          
+<p>After this, select Window &gt; Preferences, and open up the configuration for Java &gt; Code Style &gt; Code Formatter. Click on the button labeled Import... and select the file you downloaded. Give the style a name, and click OK.
+          </p>
+        </div>
+      
+    </div>
+  
+
                   </div>
             </div>
           </div>

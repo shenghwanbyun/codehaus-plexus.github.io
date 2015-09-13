@@ -7,11 +7,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Brett Porter" />
-    <meta name="Date-Creation-yyyymmdd" content="20150913" />
     <meta name="Date-Revision-yyyymmdd" content="20150913" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Plexus &#x2013; Plexus</title>
+    <title>Plexus &#x2013; Source Repository</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.4.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -52,7 +50,7 @@
         Plexus</a>
                     <span class="divider">/</span>
       </li>
-        <li class="active ">Plexus</li>
+        <li class="active ">Source Repository</li>
         
                 
                     
@@ -84,10 +82,12 @@
             </li>
                                         <li class="nav-header">Plexus</li>
                               
-      <li class="active">
+      <li>
   
-            <a href="#"><span class="none"></span>Overview</a>
-          </li>
+                          <a href="index.html" title="Overview">
+          <span class="none"></span>
+        Overview</a>
+            </li>
                               <li class="nav-header">Plexus Projects</li>
                               
       <li>
@@ -126,12 +126,10 @@
             </li>
                               <li class="nav-header">Downloads</li>
                               
-      <li>
+      <li class="active">
   
-                          <a href="source-repository.html" title="Sources">
-          <span class="none"></span>
-        Sources</a>
-            </li>
+            <a href="#"><span class="none"></span>Sources</a>
+          </li>
                 
       <li>
   
@@ -242,13 +240,41 @@
         Get Involved</a>
             </li>
                                         <li class="nav-header">Project Documentation</li>
-                                                                                                                                      
+                                                                                                                                                
       <li>
   
                           <a href="project-info.html" title="Project Information">
-          <span class="icon-chevron-right"></span>
+          <span class="icon-chevron-down"></span>
         Project Information</a>
-                  </li>
+                    <ul class="nav nav-list">
+                    
+      <li>
+  
+                          <a href="team-list.html" title="Project Team">
+          <span class="none"></span>
+        Project Team</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="issue-tracking.html" title="Issue Tracking">
+          <span class="none"></span>
+        Issue Tracking</a>
+            </li>
+                    
+      <li>
+  
+                          <a href="license.html" title="Project License">
+          <span class="none"></span>
+        Project License</a>
+            </li>
+                    
+      <li class="active">
+  
+            <a href="#"><span class="none"></span>Source Repository</a>
+          </li>
+              </ul>
+        </li>
                               <li class="nav-header">Plexus Projects</li>
                               
       <li>
@@ -312,46 +338,23 @@
         <div id="bodyColumn"  class="span10" >
                                   
             <div class="section">
-<h2><a name="Overview"></a>Overview</h2>
-<p>Codehaus Plexus is a collection of components used by <a class="externalLink" href="http://maven.apache.org/"> Apache Maven</a>:</p>
-<ul>
-<li><a href="./modello/"> Modello</a>,</li>
-<li><a href="./plexus-classworlds/">Plexus Classworlds</a>,</li>
-<li>Plexus Components: 
-<ul>
-<li><a href="./plexus-archiver/">plexus-archiver</a>: components to manipulate archives,</li>
-<li><a href="./plexus-cli">plexus-cli</a>: components to easily create CLIs,</li>
-<li><a href="./plexus-compiler/">plexus-compiler</a>: components to manipulate compilers,</li>
-<li><a href="./plexus-digest/">plexus-digest</a>: </li>
-<li><a href="./plexus-i18n/">plexus-i18n</a>: </li>
-<li><a href="./plexus-interactivity/">plexus-interactivity</a>: </li>
-<li><a href="./plexus-interpolation/">plexus-interpolation</a>: flexible interpolation framework,</li>
-<li><a href="./plexus-io/">plexus-io</a>: components designed for use in I/O operations,</li>
-<li><a href="./plexus-resources/">plexus-resources</a>: a component to transparently retrieve resources from the filesystem, classpath or internet,</li>
-<li><a href="./plexus-swizzle/">plexus-swizzle</a>: a component adaptated from David Blevin's Swizzle project to generate reports from an issue tracking system (JIRA),</li>
-<li><a href="./plexus-velocity/">plexus-velocity</a>: component to render velocity templates.</li></ul></li>
-<li><a href="./plexus-utils/"> Plexus Utils</a>,</li></ul></div>
+<h2><a name="Overview"></a>Overview</h2><a name="Overview"></a>
+<p>This project uses <a class="externalLink" href="http://git-scm.com/">Git</a> to manage its source code. Instructions on Git use can be found at <a class="externalLink" href="http://git-scm.com/documentation">http://git-scm.com/documentation</a>.</p></div>
 <div class="section">
-<h2><a name="Plexus_History"></a>Plexus History</h2><hr />
+<h2><a name="Web_Browser_Access"></a>Web Browser Access</h2><a name="Web_Browser_Access"></a>
+<p>The following is a link to a browsable version of the source repository:</p>
+<div class="source"><pre class="prettyprint linenums"><a class="externalLink" href="http://github.com/codehaus-plexus/codehaus-plexus.github.io/tree/source/">http://github.com/codehaus-plexus/codehaus-plexus.github.io/tree/source/</a></pre></div></div>
 <div class="section">
-<h3><a name="IMPORTANT_NOTICE"></a>IMPORTANT NOTICE</h3>
-<p>The Plexus project was previously focused on IoC container: it is now replaced with <a class="externalLink" href="https://www.eclipse.org/sisu/">Eclipse Sisu</a>, rewritten as an extension on Google Guice. We kept whole content on IoC for reference, even if the IoC part is now obsolete.</p><hr />
-<p>The Plexus project provides a full software stack for creating and executing software projects. Based on the Plexus container, the applications can utilise component-oriented programming to build modular, reusable components that can easily be assembled and reused.</p>
-<p>While Plexus is similar to other <i>inversion-of-control</i> (IoC) or <i>dependency injection</i> frameworks such as the Spring Framework, it is a full-fledged container that supports many more features such as:</p>
-<ul>
-<li>Component lifecycles </li>
-<li>Component instantiation strategies</li>
-<li>Nested containers </li>
-<li>Component configuration</li>
-<li>Auto-wiring</li>
-<li>Component dependencies, and </li>
-<li>Various dependency injection techniques including constructor injection, setter injection, and private field injection. </li></ul>
-<p>See the <a href="./ref/feature-comparison.html"> Feature Comparison</a> page for more information on the differences between Plexus and other products.</p>
-<p>The Plexus project provides a number of pre-built components for common tasks and toolkits such as Jetty, Velocity, Hibernate, i18n, and <a href="./ref/available-components.html"> many more</a>. However, Plexus is also able to reuse your existing components written for other IoC frameworks such as Spring, Avalon and Pico Container unmodified, as well as allowing you to reuse your existing code inside the Plexus Container.</p>
-<p>Plexus comes with an application server that can run your applications, making it trivial to build a standalone executable distribution with common features such as service execution if needed. However, Plexus applications can be run in any environment by embedding the container in an existing application, including Java EE applications or web applications.</p>
-<p>Components in Plexus need not be written in Java, with component factories existing for Jython, JRuby, Beanshell, and Groovy.</p>
-<p>The Plexus container is currently used in a number of applications and frameworks, most notably Maven 2.0 and Webwork 2.2 (Struts Action Framework 2.0).</p>
-<p>For answers to common questions about Plexus, see the <a href="./faq.html"> FAQ</a>.</p></div></div>
+<h2><a name="Anonymous_Access"></a>Anonymous Access</h2><a name="Anonymous_Access"></a>
+<p>The source can be checked out anonymously from Git with this command (See <a class="externalLink" href="http://git-scm.com/docs/git-clone">http://git-scm.com/docs/git-clone</a>):</p>
+<div class="source"><pre class="prettyprint linenums">$ git clone --branch source git@github.com:codehaus-plexus/codehaus-plexus.github.io.git</pre></div></div>
+<div class="section">
+<h2><a name="Developer_Access"></a>Developer Access</h2><a name="Developer_Access"></a>
+<p>Only project developers can access the Git tree via this method (See <a class="externalLink" href="http://git-scm.com/docs/git-clone">http://git-scm.com/docs/git-clone</a>).</p>
+<div class="source"><pre class="prettyprint linenums">$ git clone --branch source git@github.com:codehaus-plexus/codehaus-plexus.github.io.git</pre></div></div>
+<div class="section">
+<h2><a name="Access_from_Behind_a_Firewall"></a>Access from Behind a Firewall</h2><a name="Access_from_Behind_a_Firewall"></a>
+<p>Refer to the documentation of the SCM used for more information about access behind a firewall.</p></div>
                   </div>
             </div>
           </div>
